@@ -1,0 +1,30 @@
+[
+  {
+    "id": "001",
+    "nama": "Kopi Tubruk",
+    "kategori": "Minuman",
+    "harga": 7000,
+    "deskripsi": "Kopi hitam khas warung, diseduh tradisional."
+  },
+  {
+    "id": "002",
+    "nama": "Teh Manis",
+    "kategori": "Minuman",
+    "harga": 5000,
+    "deskripsi": "Teh manis hangat, cocok sore hari."
+  },
+  {
+    "id": "003",
+    "nama": "Tempe Mendoan",
+    "kategori": "Gorengan",
+    "harga": 8000,
+    "deskripsi": "Tempe tipis, digoreng setengah matang, gurih."
+  },
+  {
+    "id": "004",
+    "nama": "Pisang Goreng",
+    "kategori": "Gorengan",
+    "harga": 6000,
+    "deskripsi": "Pisang goreng garing, manis alami."
+  }
+]
