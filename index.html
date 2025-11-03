@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Warung Emung — v3</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <main class="container">
+    <header class="topbar">
+      <a href="#" class="brand">Warung Emung</a>
+    </header>
+
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Selamat rawuh di Warung Emung</h1>
+        <p class="lead">Disambut hangat oleh Mbak Neng — pelayan warung yang ramah.</p>
+        <div class="actions">
+          <button id="btnMenu" class="btn">Lihat Menu</button>
+          <button id="btnChat" class="btn outline">Ngobrol karo Neng</button>
+        </div>
+
+        <section id="chat" class="chat hidden">
+          <div class="chat-header">Ngobrol karo Neng <button id="closeChat">×</button></div>
+          <div id="chatBody" class="chat-body"></div>
+          <div class="chat-input">
+            <input id="chatInput" placeholder="Tulis pesan..." />
+            <button id="sendChat">Kirim</button>
+          </div>
+          <div class="chat-footer" style="padding:8px 12px;border-top:1px solid rgba(0,0,0,0.06);text-align:right">
+            <button id="resetName" class="btn outline">Lali Jenengku 🙈</button>
+          </div>
+        </section>
+      </div>
+
+      <div class="hero-right">
+        <div id="neng-container" class="neng-container">
+          <canvas id="neng3d" class="neng3d hidden"></canvas>
+          <img id="nengImage" src="assets/images/neng-fallback.png" alt="Mbak Neng" class="neng-img" />
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/utils.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/chat_offline.js"></script>
+  <script src="js/character3d.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
