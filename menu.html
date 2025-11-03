@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Menu — Warung Emung</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="index.html" class="brand">Warung Emung</a>
+    <nav><a href="menu.html">Menu</a> · <a href="about.html">About</a></nav>
+  </header>
+
+  <main class="container">
+    <h2>Daftar Menu</h2>
+    <div id="menuList" class="cards"></div>
+  </main>
+
+  <script src="js/utils.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/ui.js"></script>
+  <script>
+    // render menu when data loaded
+    document.addEventListener('DOMContentLoaded', async () => {
+      const menu = await loadMenu();
+      renderMenuList(menu, document.getElementById('menuList'));
+    });
+  </script>
+</body>
+</html>
