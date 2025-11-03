@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tentang — Warung Emung</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar"><a href="index.html" class="brand">Warung Emung</a></header>
+  <main class="container">
+    <h2>Tentang Warung Emung</h2>
+    <p>Warung Emung adalah warung online bernuansa Jawa, menghadirkan pengalaman hangat seperti disambut pelayan warung. Karakter AI menghadirkan suasana ngobrol yang ramah dan ngemong.</p>
+
+    <h3>Proposal Singkat</h3>
+    <pre id="proposal"></pre>
+  </main>
+
+  <script>
+    // show proposal included in proposal.txt
+    fetch('proposal.txt').then(r=>r.text()).then(t=>{
+      document.getElementById('proposal').textContent = t;
+    });
+  </script>
+</body>
+</html>
