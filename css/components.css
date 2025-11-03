@@ -1,0 +1,5 @@
+/* components */
+.img-modal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.6);z-index:9999}
+.img-modal.hidden{display:none}
+.img-modal-inner{background:var(--card);padding:18px;border-radius:12px;max-width:92%;max-height:92%;display:flex;flex-direction:column;align-items:flex-end}
+#imgLarge{max-width:100%;max-height:80vh;border-radius:8px;display:block;margin-top:8px}
